@@ -1,7 +1,0 @@
-{
-    "name": "user/gazon",
-    "require": {
-        "slim/slim": "^3.10",
-        "slim/php-view": "^2.2"
-    }
-}

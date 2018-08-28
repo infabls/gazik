@@ -1,4 +1,98 @@
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
+<IfModule mod_headers.c>
+<FilesMatch "\.(js|css|xml|gz)$">
+Header append Vary: Accept-Encoding
+</FilesMatch>
+</IfModule>
+
+
+ #RewriteEngine On
+ #RewriteCond %{HTTPS} !on
+ #RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+ # Запускаем движок замены
+
+RewriteEngine on
+
+ # Если запрашиваемый объект не папка
+
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule .* public_html/index.php [L]
+
+ # если запрашиваемый объект с дописанным расширением php - файл
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+ # делаем замену с дописыванием .php
+
+RewriteRule ^(.*)$ $1.php
+
+
+
+#Свои страницы ошибок
+
+ErrorDocument 401 /404.php
+ErrorDocument 403 /404.php
+ErrorDocument 404 /404.php
+ErrorDocument 500 /404.php
+
+
+<FilesMatch ".htaccess">
+   Order allow,deny
+   Deny from all
+</FilesMatch>
+
+<ifmodule mod_expires.c>
+<filesmatch "\.(jpg|gif|png|css|js|woff|ico)$">
+ExpiresActive on
+ExpiresDefault "access plus 1 year"
+</filesmatch>
+</ifmodule>
+<FilesMatch «\.js.gz$»>
+ForceType text/javascript
+Header set Content-Encoding: gzip
+</FilesMatch>
+<FilesMatch «\.css.gz$»>
+ForceType text/css
+Header set Content-Encoding: gzip
+</FilesMatch>
+<FilesMatch «\.js$»>
+ForceType text/javascript
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} !».*Safari.*»
+RewriteCond %{HTTP:Accept-Encoding} gzip
+RewriteCond %{REQUEST_FILENAME}.gz -f
+RewriteRule (.*)\.js$ $1\.js.gz [L]
+ForceType text/javascript
+</FilesMatch>
+<FilesMatch «\.css$»>
+ForceType text/css
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} !».*Safari.*»
+RewriteCond %{HTTP:Accept-Encoding} gzip
+RewriteCond %{REQUEST_FILENAME}.gz -f
+RewriteRule (.*)\.css$ $1\.css.gz [L]
+ForceType text/css
+</FilesMatch>
+
+
+<ifModule mod_gzip.c>
+mod_gzip_on Yes
+mod_gzip_dechunk Yes
+mod_gzip_item_include file .(html?|txt|css|js|php|pl)$
+mod_gzip_item_include handler ^cgi-script$
+mod_gzip_item_include mime ^text/.*
+mod_gzip_item_include mime ^application/x-javascript.*
+mod_gzip_item_exclude mime ^image/.*
+mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</ifModule>
+
+Options All -Indexes
+
+
+<ifmodule mod_expires.c>
+<filesmatch "\.(jpg|gif|png|css|js|woff|ico)$">
+ExpiresActive on
+ExpiresDefault "access plus 1 year"
+</filesmatch>
+</ifmodule>
+
+

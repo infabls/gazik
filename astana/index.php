@@ -1,9 +1,9 @@
 <?php 
-require 'section/header.php';
+require dirname('/section/header.php') ;
 $url = $_SERVER['REQUEST_URI'];
 $content = explode('/', $url);
 if ($content[1] == 'ust-kamenogorsk') {
-    require '/section/action.php';
+    require '../section/action.php';
 }
 require '/section/quest.php';
  require '/section/servise.php'; 
