@@ -1,4 +1,4 @@
-<?php require '/section/header.php'; ?>
+<?php require $path . '/section/header.php'; ?>
 <section id="aboutus" class="text-center">
 	<div class="row">
 
@@ -57,4 +57,4 @@
 	
 
 </section>
-<?php require '/section/footer.php'; ?>
+<?php require $path . '/section/footer.php'; ?>

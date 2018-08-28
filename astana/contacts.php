@@ -1,4 +1,4 @@
-<?php require '/section/header.php'; ?>
+<?php require $path .  '/section/header.php'; ?>
 <style>
   .nav-tabs { border-bottom: 2px solid #DDD; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
@@ -66,19 +66,19 @@
     </div>
     <div id="menu1" class="tab-pane fade">
       <h3>Астана</h3>
-      <?php  $city=0;require 'data_contact_and_price.php'; require '/section/contact.php'; ?>
+      <?php  $city=0;require 'data_contact_and_price.php'; require $path . '/section/contact.php'; ?>
     </div>
     <div id="menu2" class="tab-pane fade">
       <h3>Караганда</h3>
-     <?php $city=1;require 'data_contact_and_price.php'; require '/section/contact.php'; ?>
+     <?php $city=1;require 'data_contact_and_price.php'; require $path . '/section/contact.php'; ?>
     </div>
     <div id="menu3" class="tab-pane fade">
       <h3>Павлодар</h3>
-      <?php $city=2;require 'data_contact_and_price.php'; require '/section/contact.php'; ?>
+      <?php $city=2;require 'data_contact_and_price.php'; require $path . '/section/contact.php'; ?>
     </div>
      <div id="menu4" class="tab-pane fade">
       <h3>Усть-Каменогорск</h3>
-      <?php $city=3;require 'data_contact_and_price.php'; require '/section/contact.php'; ?>
+      <?php $city=3;require 'data_contact_and_price.php'; require $path . '/section/contact.php'; ?>
     </div>
   </div>
 </div>
@@ -125,5 +125,5 @@ bug@gorgaz2050.kz </a></p>
 </section>
 
 <?php 
-require '/section/call_q.php';
-require '/section/footer.php'; ?>
+require $path .  '/section/call_q.php';
+require  $path . '/section/footer.php'; ?>

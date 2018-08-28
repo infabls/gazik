@@ -1,4 +1,4 @@
-<?php require '/section/header.php'; ?>
+<?php require $path . '/section/header.php'; ?>
 <style>
 	.nav-tabs { border-bottom: 2px solid #DDD; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
@@ -199,4 +199,4 @@
 		</div>
 		</div>
 	</section>
-<?php require '/section/footer.php'; ?>
+<?php require $path .  '/section/footer.php'; ?>

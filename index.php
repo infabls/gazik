@@ -1,13 +1,13 @@
 <?php 
-require 'section/header.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/section/header.php';
 $url = $_SERVER['REQUEST_URI'];
 $content = explode('/', $url);
 if ($content[1] == 'ust-kamenogorsk') {
-    require '/section/action.php';
+    require $path . '/section/action.php';
 }
-require '/section/quest.php';
- require '/section/servise.php'; 
-   require '/section/why-we.php'; ?>
+require $path . '/section/quest.php';
+ require $path . '/section/servise.php'; 
+   require $path . '/section/why-we.php'; ?>
   <section id="mini_faq">
     <div class="mini-faq-title" style="text-align: center;"><h2>Вопросы</h2></div>
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -60,7 +60,7 @@ require '/section/quest.php';
         </div>
       </div>
   </section>
-  <?php require'/section/call_q.php';
+  <?php require $path . '/section/call_q.php';
 ?>
  <!-- slider -->
  <script>$(document).ready( function() {
@@ -86,4 +86,4 @@ require '/section/quest.php';
     clickEvent = false;
   });
 });</script>
-<?php require 'section/footer.php'; ?>
+<?php require $path . '/section/footer.php'; ?>
