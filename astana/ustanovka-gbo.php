@@ -1,4 +1,4 @@
-<?php require 'section/header.php'; ?>
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/section/header.php'; ?>
 <style>#video{position: relative;
 	display: block;
     height: 0;
@@ -19,7 +19,7 @@
 				</div>
 			</div>
 			<div class="col-md-5 col-sm-12 col-xs-12">
-<? require('/section/form.php');?>
+<? require($path . '/section/form.php');?>
 
 			</div>
 		</div>
@@ -178,15 +178,15 @@
 </section>
 
 <section id="calcgbo">
-	<?php require '/section/calc.php';?>		
+	<?php require $path . '/section/calc.php';?>		
 </section>
 
-<?php require '/section/cause.php';?>
+<?php require $path . '/section/cause.php';?>
 
 
 <?php
-require '/section/calc_gbo.php';
-require '/section/way-gbo.php';
-require '/section/call_q.php';
-require '/section/footer.php';
+require $path . '/section/calc_gbo.php';
+require $path . '/section/way-gbo.php';
+require $path . '/section/call_q.php';
+require $path . '/section/footer.php';
 ?>

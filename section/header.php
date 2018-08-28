@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
   <?php 
-  include  dirname('/section/data_header.php'); 
+  $path = $_SERVER['DOCUMENT_ROOT'];
+  include  $path  . '/section/data_header.php'; 
  //echo $ccity . $addr . $nomber18 . $nomber28 .$request_uri[0];
   ?>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.1.1/turbolinks.js"></script> -->

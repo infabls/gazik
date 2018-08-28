@@ -1,4 +1,4 @@
-<?php require $path . '/section/header.php'; ?>
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/section/header.php'; ?>
 <style>
 	.nav-tabs { border-bottom: 2px solid #DDD; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }

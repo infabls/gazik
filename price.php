@@ -1,4 +1,4 @@
-<?php require 'section/header.php'; ?>
+<?php require $_SERVER['DOCUMENT_ROOT'] . 'section/header.php'; ?>
 
 <style>
 	.nav-tabs { border-bottom: 2px solid #DDD; }
@@ -31,16 +31,16 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div> -->
     <div id="menu1" class="tab-pane fade in active">
-      <?php $city=0;require('data_contact_and_price.php'); require '/section/pricecard.php'; ?>
+      <?php $city=0;require('data_contact_and_price.php'); require $path . '/section/pricecard.php'; ?>
     </div>
     <div id="menu2" class="tab-pane fade">
-     <?php $city=1;require('data_contact_and_price.php'); require '/section/pricecard.php'; ?>
+     <?php $city=1;require('data_contact_and_price.php'); require $path . '/section/pricecard.php'; ?>
     </div>
     <div id="menu3" class="tab-pane fade">
-     <?php $city=2;require('data_contact_and_price.php'); require '/section/pricecard.php'; ?>
+     <?php $city=2;require('data_contact_and_price.php'); require $path . '/section/pricecard.php'; ?>
     </div>
      <div id="menu4" class="tab-pane fade">
-     <?php $city=3;require('data_contact_and_price.php'); require '/section/pricecard.php'; ?>
+     <?php $city=3;require('data_contact_and_price.php'); require $path . '/section/pricecard.php'; ?>
     </div>
 </div>
 <section id="form_price">
@@ -52,4 +52,4 @@
 	</div>
 </section>
 
-<?php require 'section/footer.php'; ?>
+<?php require $path . 'section/footer.php'; ?>

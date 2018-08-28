@@ -1,4 +1,4 @@
-<?php require $path . '/section/header.php'; ?>
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/section/header.php'; ?>
 <section id="aboutus" class="text-center">
 	<div class="row">
 

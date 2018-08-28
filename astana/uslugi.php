@@ -1,5 +1,5 @@
 <?php  
-require '/section/header.php';
-require '/section/servise.php';
-require '/section/footer.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/section/header.php';
+require $path . '/section/servise.php';
+require $path . '/section/footer.php';
  ?> 

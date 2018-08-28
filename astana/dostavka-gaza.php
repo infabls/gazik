@@ -1,4 +1,4 @@
-<?php require '/section/header.php'; ?>
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/section/header.php'; ?>
 <style>
 
 	#ctaforma{
@@ -288,4 +288,4 @@ document.getElementById("defaultOpen").click();
 	</div>
 </div> -->
 </section>
-<?php require '/section/footer.php'; ?>
+<?php require $path . '/section/footer.php'; ?>

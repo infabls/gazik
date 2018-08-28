@@ -1,4 +1,4 @@
-<?php require '/section/header.php'; ?>
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/section/header.php'; ?>
 <section id="video-forma">
 		<div class="row">
       <div class="col-md-7 col-sm-12 col-xs-12">
@@ -85,7 +85,7 @@
     </div>
 </section>
 
-<?php require '/section/calc-gazgolder.php'; ?>
+<?php require $path . '/section/calc-gazgolder.php'; ?>
 
 <section id="reccomend">
   <div class="container">
@@ -265,4 +265,4 @@
     </tbody>
   </table>
 </div></section>
-<?php require '/section/footer.php'; ?>
+<?php require $path . '/section/footer.php'; ?>

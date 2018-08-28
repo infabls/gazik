@@ -1,4 +1,4 @@
-<?php require '/section/header.php'; ?>
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/section/header.php'; ?>
 <link rel="stylesheet" href="/assets/css/faq.min.css">
 <style>
 section{
@@ -421,5 +421,5 @@ main{
 </section>
 <!-- cd-faq -->
 <script src="/assets/js/main.js"></script>
-<? require  '/section/call_q.php' ;?>
-<?php require '/section/footer.php'; ?>
+<? require  $path . '/section/call_q.php' ;?>
+<?php require $path . '/section/footer.php'; ?>
