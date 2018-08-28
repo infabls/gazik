@@ -35,8 +35,7 @@ function clean($city)
 	$page[6] = 'uslugi.php';
 	$page[7] = 'price.php';
 
-copy($page[0], $city[0] . $page[0] );
 
-for ($i=0; $i < 7; $i++) { 
-copy($page[$i], $city[0] . $page[$i] );
+for ($i=0; $i < 8; $i++) { 
+copy($page[$i], $city[3] . $page[$i] );
 }
