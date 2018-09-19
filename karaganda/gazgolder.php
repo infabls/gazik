@@ -1,4 +1,10 @@
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/section/header.php'; ?>
+<title>ТОО Горгаз 2050 - Официальный сайт</title>
+<meta name="description" content="">
+<meta name="keywords" content=""> 
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<?php require $path . '/section/hb.php'; ?>
 <section id="video-forma">
 		<div class="row">
       <div class="col-md-7 col-sm-12 col-xs-12">
@@ -23,6 +29,32 @@
 						<input type="text" name="e-mail" id="email" class="dushbord__form_input" required="yes"><br>
 						<label for="phone" class="dushbord__form_label">Ваш телефон</label><br>
 						<input type="tel" name="phone" id="phone" class="dushbord__form_input" required="yes"><br>
+            <?php
+            if(!empty($_POST['e-mail'])){
+  //Получаем данные из глобальной переменной $_GET, так как мы передаем данные методом GET
+  $name = $_POST['name']; // Вытаскиваем имя в переменную
+  $email = $_POST['e-mail']; // Вытаскиваем почту в переменную
+  $phone= $_POST['phone'];
+  $message = "Поздравляем, $name, отправка сообщений на почту $email и номером $phone работает"; // Формируем сообщение, отправляемое на почту
+  $to = 'gorgaz2050@mail.ru'; // Задаем получателя письма
+  $from = $email;  // От кого пришло письмо
+  $subject = "Письмо из формы заказа доставки газа"; // Задаем тему письма
+  $headers = "From: $from\r\nReply-To: $to\r\nContent-type: text/html; charset=utf-8\r\n"; // Формируем заголовок письма (при неправильном формировании может ломаться кодировка и т.д.)
+    if (mail($to, $subject, $message, $headers)) { // При помощи функции mail, отправляем сообщение, проверяя отправилось оно или нет
+    // echo "<script>document.location.href='http://gorgaz2050.kz';</script>";
+      echo "
+      <div class="."dushbord__form_message".">
+        <p>Ваша заявка принята!</p>
+      </div>
+      ";
+    }
+    else {
+      echo "
+      <p>Ошибка!</p>
+        "; // Письмо не отправилось
+      }
+    }
+    ?>
 						<input type="submit" name="submit" value="ОТПРАВИТЬ" class="dushbord__form_submit">
 					</form>
 									</div>

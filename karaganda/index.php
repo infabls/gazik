@@ -1,5 +1,11 @@
-<?php 
-require $_SERVER['DOCUMENT_ROOT'] . '/section/header.php';
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/section/header.php'; ?>
+<title>ТОО Горгаз 2050 - Официальный сайт</title>
+<meta name="description" content="">
+<meta name="keywords" content=""> 
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://gorgaz2050.kz/img/bg.jpg">
+<?php require $path . '/section/hb.php';
 $url = $_SERVER['REQUEST_URI'];
 $content = explode('/', $url);
 if ($content[1] == 'ust-kamenogorsk') {
@@ -60,30 +66,4 @@ require $path . '/section/quest.php';
         </div>
       </div>
   </section>
-  <?php require $path . '/section/call_q.php';
-?>
- <!-- slider -->
- <script>$(document).ready( function() {
-    $('#myCarousel').carousel({
-    interval:   4000
-  });
-  
-  var clickEvent = false;
-  $('#myCarousel').on('click', '.nav a', function() {
-      clickEvent = true;
-      $('.nav li').removeClass('active');
-      $(this).parent().addClass('active');    
-  }).on('slid.bs.carousel', function(e) {
-    if(!clickEvent) {
-      var count = $('.nav').children().length -1;
-      var current = $('.nav li.active');
-      current.removeClass('active').next().addClass('active');
-      var id = parseInt(current.data('slide-to'));
-      if(count == id) {
-        $('.nav li').first().addClass('active');  
-      }
-    }
-    clickEvent = false;
-  });
-});</script>
-<?php require $path . '/section/footer.php'; ?>
+  <?php require $path . '/section/call_q.php'; require $path . '/section/footer.php'; ?>

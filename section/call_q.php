@@ -22,18 +22,19 @@
 <form action="" method="POST">
 <div class="modal-body">
 	<div class="modal-inp"><input name="name" id="modal-inp" placeholder="Как к вам обращаться?" class="dushbord__form_input" type="text"></div>
-	<div class="modal-tel"><input name="phone" id="modal-inp" placeholder="Укажите свой телефон" class="dushbord__form_input" type="text"></div>
-		<div class="modal-tel"><input name="phone" id="modal-inp" placeholder="E-mail (не обязательно)" class="dushbord__form_input" type="text"></div>
+	<div class="modal-tel"><input name="phone" type="tel" id="modal-inp" placeholder="Укажите свой телефон" class="dushbord__form_input" type="text"></div>
+		<div class="modal-tel"><input name="email" type="email" id="modal-inp" placeholder="E-mail (не обязательно)" class="dushbord__form_input" type="text"></div>
 		<?php
 			if(!empty($_POST['phone'])){
 	//Получаем данные из глобальной переменной $_GET, так как мы передаем данные методом GET
 	$name = $_POST['name']; // Вытаскиваем имя в переменную
 	//$email = $_POST['e-mail']; // Вытаскиваем почту в переменную
 	$phone= $_POST['phone'];
-	$message = "Имя клиента: $name, <br> Номер телефона: $phone <br> Почта  "; // Формируем сообщение, отправляемое на почту
-	$to = ''; // Задаем получателя письма
+	$email = $_POST['email'];
+	$message = "Имя клиента: $name, <br> Номер телефона: $phone <br> Почта: $email"; // Формируем сообщение, отправляемое на почту
+	$to = 'gorgaz2050@mail.ru'; // Задаем получателя письма
 	$from = $phone;  // От кого пришло письмо
-	$subject = "Заявка на ГБО"; // Задаем тему письма
+	$subject = "Заявка c сайта. Подвальная форма обратной связи"; // Задаем тему письма
 	$headers = "От кого: $from\r\nReply-To: $to\r\nContent-type: text/html; charset=utf-8\r\n"; // Формируем заголовок письма (при неправильном формировании может ломаться кодировка и т.д.)
 	mail($to, $subject, $message, $headers);
 		}

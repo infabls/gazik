@@ -1,4 +1,10 @@
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/section/header.php'; ?>
+<title>Установка ГБО на авто в <?=$ccityr?></title>
+<meta name="description" content="Моментальная установка ГБО в <?=$ccityr?>. Лучшая цена на газобалонное оборудование в <?=$ccityr?>. Гарантия 1 год. Окупаемость 4 месяца.">
+<meta name="keywords" content="гбо, автогаз, +поколения, купить, стоимость, установка, оборудование"> 
+<meta property="og:title" content="Установка ГБО на авто в <?=$ccityr?>">
+<meta property="og:description" content="Моментальная установка ГБО в <?=$ccityr?>. Лучшая цена на газобалонное оборудование в <?=$ccityr?>. Гарантия 1 год. Окупаемость 4 месяца.">
+<?php require $path . '/section/hb.php'; ?>
 <style>#video{position: relative;
 	display: block;
     height: 0;
@@ -20,31 +26,24 @@
 			</div>
 			<div class="col-md-5 col-sm-12 col-xs-12">
 <? require($path . '/section/form.php');?>
-
 			</div>
 		</div>
 	</div>
 </section>
-
 <section id="what_gbo">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2"><div class="card-w bg-primary">
 		<h2>Что такое <abbr title="Газобалонное оборудование">ГБО?</abbr></h2>
 		<p>Надоело расстраиваться, увидев новую цену за литр бензина? Хотите экономить на топливе и при этом пользоваться автомобилем каждый день? Выход есть: установите ГБО и на заправке будете платить вдвое меньше.</p>
 <p>Компания ГорГаз больше десяти лет занимается профессиональной установкой и обслуживанием газового оборудования. Мы знаем всё о ГБО и готовы поделиться с вами.</p>
-
 	</div></div>
 	</div>
 </section>
-
-
 <section class="hidden-xs" id="gbo_map " style="background: var(--gray)">
 	<script>
 		$(function () {
   $('[data-toggle="popover"]').popover()
   // $('[id="onetkn"]').popover('toggle')
-
-
 })
 // $('[data-toggle="popover"]').popover({
 //         trigger: "manual",
@@ -174,16 +173,11 @@
 		</div>
 
 	</div>
-
 </section>
-
 <section id="calcgbo">
 	<?php require $path . '/section/calc.php';?>		
 </section>
-
 <?php require $path . '/section/cause.php';?>
-
-
 <?php
 require $path . '/section/calc_gbo.php';
 require $path . '/section/way-gbo.php';

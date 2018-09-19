@@ -1,4 +1,10 @@
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/section/header.php'; ?>
+<title>АЗГС - газовые заправки для авто - <?=$ccity ?></title>
+<meta name="description" content="Сеть газовых заправок в <?=$ccityr ?>. Заправка авто газом ещё никогда не была такой удобной. Выберите ближайшую заправку на карте в <?=$ccityr ?>">
+<meta name="keywords" content="автогаз, заправка, азс, азгс, авто, газ, пропан, сжиженный, +на карте, карта, <?=$ccity?>"> 
+<meta property="og:title" content="АЗГС - газовые заправки для авто - <?=$ccity ?>">
+<meta property="og:description" content="Сеть газовых заправок в <?=$ccityr ?>. Заправка авто газом ещё никогда не была такой удобной. Выберите ближайшую заправку на карте">
+<?php require $path . '/section/hb.php'; ?>
 <style>
 	.nav-tabs { border-bottom: 2px solid #DDD; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
