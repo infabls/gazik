@@ -1,0 +1,47 @@
+#SECURITY
+	#protect files
+		<FilesMatch ".htaccess">
+	   Order allow,deny
+	   Deny from all
+		</FilesMatch>
+	#запрет листинга каталогов
+		Options All -Indexes
+
+#SPEED
+	#gzip
+	#keep-alive
+		<ifModule mod_headers.c> Header set Connection keep-alive </ifModule>
+	#etag
+	#expires
+
+#OTHER
+
+	#errors pages
+		ErrorDocument 401 /404.php
+		ErrorDocument 403 /404.php
+		ErrorDocument 404 /404.php
+		ErrorDocument 500 /404.php
+
+	#Запрещаем загрузку файлов с внешних сайтов
+		RewriteEngine On
+		RewriteCond %{HTTP_REFERER} !^$
+		RewriteCond %{HTTP_REFERER} !^http://(www.)?domainname.com/ [nc]
+		RewriteRule .*.(gif|jpg|png)$ http://domainname.com/img/stop_stealing_bandwidth.gif[nc]
+
+
+#REDIRECTS
+
+	#https 
+		RewriteEngine On
+		RewriteCond %{HTTPS} !on
+		RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+	#php - no php
+		RewriteEngine on
+		RewriteCond %{REQUEST_FILENAME} !-d
+		RewriteCond %{REQUEST_FILENAME}\.php -f
+		RewriteRule ^(.*)$ $1.php
+
+	#304 for static
+
+	#lost pages

@@ -1,7 +1,7 @@
 <?php require $_SERVER['DOCUMENT_ROOT'] .  '/section/header.php'; ?>
 <title>Контакты Горгаз - <?=$ccity?></title>
 <meta name="description" content="Телефоны и адреса Горгаз в <?=$ccityr?>. ">
-<meta name="keywords" content="контакты, телефон, адрес, позвонить, заказать"> 
+<meta name="keywords" content="контакты, телефон, адрес, позвонить, заказать, горгаз, <?=$ccity?>"> 
 <meta property="og:title" content="Контакты Горгаз - <?=$ccity?>">
 <meta property="og:description" content="Телефоны и адреса Горгаз в <?=$ccityr?>.">
 <?php require $path . '/section/hb.php'; ?>
@@ -11,7 +11,6 @@
 <section>
   <div class="text-center"><h1>Контакты Горгаз - <?=$ccity ?> </h1>
 </section>
-
 
 <?php 
 require $path .'/section/home_contact.php';

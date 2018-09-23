@@ -1,6 +1,6 @@
 <?php  
 require $_SERVER['DOCUMENT_ROOT'] . '/section/header.php';?>
-<title>ТОО Горгаз 2050 - Официальный сайт</title>
+<title>Услуги газовой компании - <?=$ccity?></title>
 <meta name="description" content="">
 <meta name="keywords" content=""> 
 <meta property="og:title" content="">
