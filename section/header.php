@@ -1,3 +1,11 @@
+<?php 
+if (!empty($_GET['city'])) {
+   header('Location: ' . $_SERVER['SCRIPT_NAME']);
+}
+if ($_GET['city'] == '0') {
+  header('Location: ' . $_SERVER['SCRIPT_NAME']);
+}
+ ?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>

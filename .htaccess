@@ -2,6 +2,15 @@
 Header set Cache-Control "public, max-age=3600"
 </FilesMatch>
 
+
+
+Redirect 301 /sto-v-pavlodare /pavlodar/
+Redirect 301 /gaz-dlya-domov-gazgolderov /gazgolder
+Redirect 301 /gbo-gazovoye-oborudovaniye-na-avtotransport/ /ustanovka-gbo
+Redirect 301 /ustanovka-gbo-na-avto-gaz /ustanovka-gbo
+Redirect 301 /zapravka-avto-gazom /avtogaz
+
+
 DirectoryIndex contacts.php
 
 RewriteRule .* - [E=HTTP_IF_MODIFIED_SINCE:%{HTTP:If-Modified-Since}]

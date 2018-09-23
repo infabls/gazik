@@ -6,6 +6,9 @@
 		</FilesMatch>
 	#запрет листинга каталогов
 		Options All -Indexes
+	#csp
+	#csrf
+	#xss
 
 #SPEED
 	#gzip
@@ -21,7 +24,8 @@
 		ErrorDocument 403 /404.php
 		ErrorDocument 404 /404.php
 		ErrorDocument 500 /404.php
-
+	#direcory index
+		DirectoryIndex contacts.php
 	#Запрещаем загрузку файлов с внешних сайтов
 		RewriteEngine On
 		RewriteCond %{HTTP_REFERER} !^$
@@ -45,3 +49,8 @@
 	#304 for static
 
 	#lost pages
+		Redirect 301 /sto-v-pavlodare /pavlodar/
+		Redirect 301 /gaz-dlya-domov-gazgolderov /gazgolder
+		Redirect 301 /gbo-gazovoye-oborudovaniye-na-avtotransport/ /ustanovka-gbo
+		Redirect 301 /ustanovka-gbo-na-avto-gaz /ustanovka-gbo
+		Redirect 301 /zapravka-avto-gazom /avtogaz
