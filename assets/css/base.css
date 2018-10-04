@@ -89,8 +89,11 @@ h2{
 /*.card_inde_cont{
     height: 405px;
 }*/
+.card-pr-ballon {
+    height: 0;
+}
       .card-pr{
-    min-height: 400px;
+    min-height: 350px;
     max-height: 441px;
     min-width: 180px;
     max-width: 400px;

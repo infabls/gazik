@@ -9,6 +9,7 @@
 						</div>	
 						<div class="card_text">
 							<p>Цена на автогаз составляет: <?=$price4?></p>
+							<a href="avtogaz" class="btn btn-primary">Найти ближаюшую АЗГС на карте</a>
 						</div>				
 					</div>
 	
@@ -25,23 +26,22 @@
 			</div>
 
 			<div class="col-md-5 col-sm-5 col-xs-12">
-				<div class="card-w card-1 card-pr ">
+				<div class="card-w card-1 card-pr-ballon">
 					<div class="bg-servise bg-gas" ></div>
 							<div class="card_title" >
 							<h3 style="margin: 0;">Цена на газ в баллонах</h3>
 							</div>
 								<div class="card_text">
-								<p>Цена на газ в баллонах (8 кг) составляет: <?=$price1?></p>
+								<p>8 кг - <?=$price1?></p>
 							</div>				
 								<div class="card_text">
-								<p>Цена на газ в баллонах (10 кг) составляет:<?=$price2?></p>
+								<p>10 кг - <?=$price2?></p>
 							</div>	
 								<div class="card_text">
-								<p>Цена на газ в баллонах (20 кг) составляет: <?=$price3?></p>
+								<p>20 кг - <?=$price3?></p>
 							</div>
 							<div class="card_text">
-								<p>Самовывоз с АГЗС составляет: <?=$price3?></p>
-								<a href="avtogaz" class="btn btn-primary">Найти ближаюшую АЗГС на карте</a>
+								<a href="dostavka-gaza" class="btn btn-primary">Заказать доставку газа</a>
 							</div>
 						</div>
 					</div>
@@ -56,16 +56,16 @@
 							<h3>Цена на ГБО</h3>
 							</div>	
 								<div class="card_text">
-								<p>Цена на ГБО 2-го поколения составляет: <?=$price10?></p>
+								<p>Цена на ГБО 2-го поколения <?=$price10?></p>
 							</div>
 								<div class="card_text">
-								<p>Цена на ГБО 4-го поколения составляет: <?=$price5?></p>
+								<p>Цена на ГБО 4-го поколения <?=$price5?></p>
 							</div>				
 								<div class="card_text">
-								<p>Цена на ГБО 6-го поколения составляет: <?=$price6?></p>
+								<p>Цена на ГБО 6-го поколения <?=$price6?></p>
 							</div>	
 								<div class="card_text">
-								<p>Цена на ГБО 8-го поколения составляет: <?=$price7?></p>
+								<p>Цена на ГБО 8-го поколения <?=$price7?></p>
 							</div>							
 					</div>
 				</div>

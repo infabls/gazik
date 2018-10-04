@@ -16,39 +16,21 @@
 	.tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
 	.tab-pane { padding: 15px 0; }
 	.tab-content{padding:0 10px }
-/section
-.card {backgr/sectionound: #FFF none repeat scroll 0% 0%; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); margin-bottom: 30px; }
+.card {background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); margin-bottom: 30px; }
 </style>
+  <div class="row">
+    <div class="card-w text-center"><p class="bg-danger" style="margin-top: 10px;">Цены не являются публичной оффертой и могут отличаться от указанных на сайте </p></div>
+  </div>
+
 <div class="text-center"><h1>Цены на услуги Горгаз </h1>
 <p>Для просмора цен выберите город</p></div>
 
-
-  <ul class="nav nav-tabs nav-justified">
-<!--     <li ><a data-toggle="tab" href="#home">Все цены</a></li> -->
-    <li class="active"><a data-toggle="tab" href="#menu1">Астана</a></li>
-    <li><a data-toggle="tab" href="#menu2">Караганда</a></li>
-    <li><a data-toggle="tab" href="#menu3">Павлодар</a></li>
-    <li><a data-toggle="tab" href="#menu4">Усть-Каменогорск</a></li>
+ <ul class="nav nav-tabs nav-justified">
+    <li ><a   href="/astana/price">Астана</a></li>
+    <li><a  href="/karaganda/price">Караганда</a></li>
+    <li><a  href="/pavlodar/price">Павлодар</a></li>
+    <li><a  href="/ust-kamenogorsk/price">ВКО</a></li>
   </ul>
-
-  <div class="tab-content">
-<!--     <div id="home" class="tab-pane fade">
-      <h3>Все цены</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div> -->
-    <div id="menu1" class="tab-pane fade in active">
-      <?php $city=0;require $path . '/section/data_contact_and_price.php'; require $path . '/section/pricecard.php'; ?>
-    </div>
-    <div id="menu2" class="tab-pane fade">
-     <?php $city=1;require $path . '/section/data_contact_and_price.php'; require $path . '/section/pricecard.php'; ?>
-    </div>
-    <div id="menu3" class="tab-pane fade">
-     <?php $city=2;require $path . '/section/data_contact_and_price.php'; require $path . '/section/pricecard.php'; ?>
-    </div>
-     <div id="menu4" class="tab-pane fade">
-     <?php $city=3;require $path . '/section/data_contact_and_price.php'; require $path . '/section/pricecard.php'; ?>
-    </div>
-</div>
 <section id="form_price">
 	<div class="container">
 		<div class="card-w text-center">
