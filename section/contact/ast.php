@@ -7,10 +7,6 @@
           <div class="col-sm-6 col-xs-12"><h4>Городской</h4></div>
         </div>
         <div class="row">
-          <div class="col-sm-6 col-xs-12"><div class="card__phone-icon"><a class="card__open-link" href="tel:+77015270527">8 701 527 05 27</a> </div> </div>
-          <div class="col-sm-6 col-xs-12"><h4>Актив</h4></div>
-        </div>
-        <div class="row">
           <div class="col-sm-6 col-xs-12"><div class="card__phone-icon"><a class="card__open-link" href="tel:+77071810218">8 707 181 02 18</a> </div></div>
           <div class="col-sm-6 col-xs-12"><h4>Теле 2</h4></div>
         </div>
@@ -67,7 +63,7 @@
         </div> 
       </a>
       <div id="Шортанды" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" style="height: 0px;">
-        <div class="panel-body"> <div class="card__phone-icon"><a class="card__open-link" href="tel:+77015270527">8 701 527 05 27</a></div>
+        <div class="panel-body"> <div class="card__phone-icon"><a class="card__open-link" href="tel:+77015270527">8 707 181 02 18</a></div>
       </div>
     </div>
   </div>
